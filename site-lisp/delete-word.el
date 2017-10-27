@@ -1,4 +1,4 @@
-
+;; Link: http://ergoemacs.org/emacs/emacs_kill-ring.html
 
 (defun my-delete-word (arg)
   "Delete characters forward until encountering the end of a word.
