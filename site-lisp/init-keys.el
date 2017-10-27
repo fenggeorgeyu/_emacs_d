@@ -2,12 +2,14 @@
 ;; (setq mac-option-key-is-meta t)
 ;; (setq mac-right-option-modifier nil)
 
-;;work with [] and {} on mac
-(require 'swap-braces)
-
 ;;;;--insert date and time
 (require 'datetime-insert)
 
+;;;;---delete words without killing ring or clipboard---
+(require 'delete-word)
+
+;;work with [] and {} on mac for tabbar key
+(require 'swap-braces)
 
 (require 'redo+)
 (define-key global-map [s-Z] 'redo);requires redo+
@@ -72,6 +74,8 @@
 (global-unset-key [s-drag-mouse-1])
 
 (global-unset-key [s-down-mouse-1])
+
+
 
 
 
