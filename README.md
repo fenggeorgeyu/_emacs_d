@@ -1,5 +1,6 @@
 # _emacs_d
-my emacs configurations
+
+my emacs configurations on Mac computer
 
 ## Installation
 
