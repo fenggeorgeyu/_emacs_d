@@ -1,0 +1,5 @@
+;;(setq display-time-format "%Y-%m-%d %A %H:%M:%S")
+(setq display-time-format "%m/%d/%y %a %H:%M")
+(setq display-time-interval 10)
+(display-time-mode t)
+(provide 'display-time)
