@@ -30,9 +30,9 @@
 ;;---spell check---
 (require 'init-flyspell)
 
-;;---yasnippet--
-(require 'yasnippet)
-(yas-global-mode 1)
+;; ;;---yasnippet--
+;; (require 'yasnippet)
+;; (yas-global-mode 1)
 
 ;;---python elpy---
 ;;(package-initialize)
