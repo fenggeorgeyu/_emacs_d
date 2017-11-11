@@ -16,7 +16,7 @@
 (require-package 'zenburn-theme)
 (require-package 'atom-one-dark-theme)
 (load-theme 'monokai t)
-;; (load-theme 'zenburn t)
+;;(load-theme 'zenburn t)
 ;;(load-theme 'atom-one-dark t)
 
 ;;---font
