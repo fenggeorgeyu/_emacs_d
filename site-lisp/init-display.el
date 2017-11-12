@@ -25,6 +25,8 @@
 ;;(set-default-font "Roboto Mono-17")
 ;;--line space
 (setq-default line-spacing 2)
+;;---tab---
+(setq tab-width 8)
 ;;---scroll one line at a time (less "jumpy" than defaults)
 (setq mouse-wheel-scroll-amount '(3 ((shift) . 1))) ;; two lines at a time
 (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
