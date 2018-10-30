@@ -13,4 +13,5 @@
 (setq speedbar-use-images nil) ; use text for buttons
 (setq sr-speedbar-right-side nil) ; put on left side
 (global-set-key (kbd "s-D") 'sr-speedbar-toggle)
+(global-set-key (kbd "<f5>") 'sr-speedbar-toggle)
 (provide 'init-speedbar)

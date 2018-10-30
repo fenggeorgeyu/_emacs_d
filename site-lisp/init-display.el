@@ -10,13 +10,15 @@
 (powerline-default-theme)
 ;;(powerline-center-theme)
 ;;(powerline-vim-theme)
+;;---mouse---
+(xterm-mouse-mode 1) ;;enable mouse in termial
 
 ;;---color theme---
 (require-package 'monokai-theme)
 (require-package 'zenburn-theme)
 (require-package 'atom-one-dark-theme)
-(load-theme 'monokai t)
-;;(load-theme 'zenburn t)
+;;(load-theme 'monokai t)
+(load-theme 'zenburn t)
 ;;(load-theme 'atom-one-dark t)
 
 ;;---font

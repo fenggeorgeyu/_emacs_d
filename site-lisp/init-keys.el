@@ -15,6 +15,18 @@
 (define-key global-map [s-Z] 'redo);requires redo+
 ;;(global-set-key (kbd "M-Z") 'redo)
 
+
+
+;; ITERM2 MOUSE SUPPORT
+    (unless window-system
+      (require 'mouse)
+      (xterm-mouse-mode t)
+      (defun track-mouse (e)) 
+      (setq mouse-sel-mode t)
+    )
+
+
+
 ;;(require 'mac-key-mode)
 ;;(mac-key-mode 1)
 ;;(global-unset-key (kbd "s-drag-mouse-1"))
@@ -46,6 +58,9 @@
 (global-set-key (kbd "s-/") 'comment-dwim-line)
 
 
+
+
+
 (defun my-move-cursor (event)
 (interactive "e")
 (deactivate-mark)
@@ -70,10 +85,23 @@
 ;; (global-set-key [down-mouse-3] 'mouse-drag-region)
 ;; (global-set-key [drag-mouse-3] 'mouse-set-region)
 
-
+;; mouse
 (global-unset-key [s-drag-mouse-1])
-
 (global-unset-key [s-down-mouse-1])
+
+;;---mouse scroll in terminal---
+(unless window-system
+  (require 'mouse)
+  (xterm-mouse-mode t)
+  (global-set-key [mouse-4] (lambda ()
+                              (interactive)
+                              (scroll-down 1)))
+  (global-set-key [mouse-5] (lambda ()
+                              (interactive)
+                              (scroll-up 1)))
+  (defun track-mouse (e))
+  (setq mouse-sel-mode t)
+)
 
 
 
