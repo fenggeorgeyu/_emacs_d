@@ -15,18 +15,6 @@
 (define-key global-map [s-Z] 'redo);requires redo+
 ;;(global-set-key (kbd "M-Z") 'redo)
 
-
-
-;; ITERM2 MOUSE SUPPORT
-    (unless window-system
-      (require 'mouse)
-      (xterm-mouse-mode t)
-      (defun track-mouse (e)) 
-      (setq mouse-sel-mode t)
-    )
-
-
-
 ;;(require 'mac-key-mode)
 ;;(mac-key-mode 1)
 ;;(global-unset-key (kbd "s-drag-mouse-1"))
@@ -77,6 +65,9 @@
   (blink-cursor-mode blinking))
 )
 
+
+
+
 ;; ; Set up mouse 1 movement
 ;; (global-set-key [drag-mouse-1] 'mouse-set-point)
 ;; (global-set-key [down-mouse-1] 'my-move-cursor)
@@ -88,6 +79,16 @@
 ;; mouse
 (global-unset-key [s-drag-mouse-1])
 (global-unset-key [s-down-mouse-1])
+
+
+;; ITERM2 MOUSE SUPPORT
+(unless window-system
+  (require 'mouse)
+  (xterm-mouse-mode t)
+  (defun track-mouse (e)) 
+  (setq mouse-sel-mode t)
+)
+
 
 ;;---mouse scroll in terminal---
 (unless window-system
