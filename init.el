@@ -22,38 +22,31 @@
 (require 'init-tabbar)
 ;;--key--
 (require 'init-keys)
+(require 'init-osx-keys)
 ;;---speed bar---
 (require 'init-speedbar)
 ;;--markdown
 (require 'init-markdown)
 ;;---spell check---
 (require 'init-flyspell)
-
+;;(require 'init-flycheck)
 ;; ;;---yasnippet--
 ;; (require 'yasnippet)
 ;; (yas-global-mode 1)
-
 ;;---python elpy---
 (require 'init-python)
-
 ;;---github---
 (require 'init-github)
-
 ;;---company---
 (require 'init-company)
+;;---folding---
+(require 'init-folding)
+;;---javascript----
+(require 'init-javascript)
+
+(require 'init-sql)
+
+(require 'init-whitespace)
 
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (anaconda-mode pip-requirements zenburn-theme with-editor tabbar sr-speedbar projectile powerline monokai-theme markdown-mode elpy atom-one-dark-theme))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
