@@ -24,15 +24,15 @@
 
 ;; We include the org repository for completeness, but don't normally
 ;; use it.
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
+;;(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 
-(when (< emacs-major-version 24)
-  (add-to-list 'package-archives
-               `("gnu" . ,(add-address-prefix "elpa.gnu.org/packages/"))))
+;; (when (< emacs-major-version 24)
+;;   (add-to-list 'package-archives
+;;                `("gnu" . ,(add-address-prefix "elpa.gnu.org/packages/"))))
 
 ;;; Also use Melpa for most packages
 (add-to-list 'package-archives
-             `("melpa" . ,(add-address-prefix "melpa.org/packages/")))
+            `("melpa" . ,(add-address-prefix "melpa.org/packages/")))
 (add-to-list 'package-archives
              `("melpa-stable" . ,(add-address-prefix "stable.melpa.org/packages/")))
 

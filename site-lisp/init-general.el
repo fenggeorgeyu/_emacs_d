@@ -6,4 +6,5 @@
 ;;disable auto save
 (setq auto-save-default nil)
 
+
 (provide 'init-general)

@@ -39,7 +39,7 @@ This command does not push text to `kill-ring'."
 
 ; bind them to emacs's default shortcut keys:
 (global-set-key (kbd "C-S-k") 'my-delete-line-backward) ; Ctrl+Shift+k
-(global-set-key (kbd "C-k") 'my-delete-line)
+;(global-set-key (kbd "C-k") 'my-delete-line) ; not use this
 (global-set-key (kbd "M-d") 'my-delete-word)
 ;;(global-set-key (kbd "<M-backspace>") 'my-backward-delete-word)
 (global-set-key [M-backspace] 'my-backward-delete-word)
