@@ -5,16 +5,19 @@
 ;; Calls (package-initialize)
 (require 'init-elpa)
 
-
 (require-package 'wgrep)
 (require-package 'diminish)
 (require-package 'scratch)
 (require-package 'command-log-mode)
 
+
+
+
 ;;====general=====
 (require 'init-general)
 ;;---display related---
 (require 'init-display)
+(require 'init-xterm)
 ;;---tab bar---
 (require 'init-tabbar)
 ;;--key--
@@ -31,13 +34,13 @@
 ;; (yas-global-mode 1)
 
 ;;---python elpy---
-;;(package-initialize)
-;;(elpy-enable)
 (require 'init-python)
-;;---github---
-;;(require 'init-github)
 
-(require 'init-company.el)
+;;---github---
+(require 'init-github)
+
+;;---company---
+(require 'init-company)
 
 
 (custom-set-variables

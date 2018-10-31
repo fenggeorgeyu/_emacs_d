@@ -6,5 +6,6 @@
 ;;disable auto save
 (setq auto-save-default nil)
 
+(defconst *is-a-mac* (eq system-type 'darwin))
 
 (provide 'init-general)
