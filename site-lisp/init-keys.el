@@ -30,6 +30,13 @@
 (define-key global-map "\C-r" 'replace-string);;replace
 (define-key global-map "\C-x\C-g" 'goto-line);;goto line
 
+;;---window---
+;;(global-set-key (kbd "<C-up>") 'shrink-window)
+;;(global-set-key (kbd "<C-down>") 'enlarge-window)
+(global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
+(global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
+
+
 ;;;;---comment---
 ;; Original idea from
 ;; http://www.opensubscriber.com/message/emacs-devel@gnu.org/10971693.html
@@ -44,6 +51,7 @@
         (comment-or-uncomment-region (line-beginning-position) (line-end-position))
       (comment-dwim arg)))
 (global-set-key (kbd "s-/") 'comment-dwim-line)
+(global-set-key (kbd "C-c c") 'comment-dwim-line)
 
 
 

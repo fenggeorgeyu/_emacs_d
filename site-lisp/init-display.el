@@ -1,3 +1,4 @@
+;;===bell, theme, color, mouse, cursor, time, etc.===
 ;;---disable bell sound---
 (setq visible-bell t)
 (setq ring-bell-function 'ignore)
@@ -10,8 +11,6 @@
 (powerline-default-theme)
 ;;(powerline-center-theme)
 ;;(powerline-vim-theme)
-;;---mouse---
-(xterm-mouse-mode 1) ;;enable mouse in termial
 
 ;;---color theme---
 (require-package 'monokai-theme)
@@ -28,12 +27,7 @@
 ;;--line space
 (setq-default line-spacing 2)
 ;;---tab---
-(setq tab-width 8)
-;;---scroll one line at a time (less "jumpy" than defaults)
-(setq mouse-wheel-scroll-amount '(3 ((shift) . 1))) ;; two lines at a time
-(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
-(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
-(setq scroll-step 1) ;; keyboard scroll one line at a time
+(setq tab-width 4)
 
 ;;--cursor
 ;; http://www.emacswiki.org/emacs/ChangingCursorDynamically
@@ -49,5 +43,16 @@
 
 ;;---display time
 (require 'display-time)
+
+
+
+;;---mouse---
+(xterm-mouse-mode 1) ;;enable mouse in termial
+;;---scroll one line at a time (less "jumpy" than defaults)
+(setq mouse-wheel-scroll-amount '(3 ((shift) . 1))) ;; two lines at a time
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+(setq scroll-step 1) ;; keyboard scroll one line at a time
+
 
 (provide 'init-display)
