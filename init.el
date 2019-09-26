@@ -1,7 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 (require 'init-utils)
 ;; Must come before elpa, as it may provide package.el
-(require 'init-site-lisp) 
+(require 'init-site-lisp)
 ;; Calls (package-initialize)
 (require 'init-elpa)
 
