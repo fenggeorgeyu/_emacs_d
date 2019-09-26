@@ -32,7 +32,7 @@
 ;;(require 'init-flycheck)
 ;; ;;---yasnippet--
 ;; (require 'yasnippet)
-;; (yas-global-mode 1)
+;; (yas-global-mod 1)
 ;;---python elpy---
 (require 'init-python)
 ;;---github---
@@ -47,7 +47,8 @@
 (require 'init-sql)
 ;;---whitespace---
 (require 'init-whitespace)
-
+;;---ssh---
+(require 'init-ssh)
 
 
 (custom-set-variables
