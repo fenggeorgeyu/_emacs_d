@@ -32,7 +32,7 @@
 ;;(require 'init-flycheck)
 ;; ;;---yasnippet--
 ;; (require 'yasnippet)
-;; (yas-global-mode 1)
+;; (yas-global-mod 1)
 ;;---python elpy---
 (require 'init-python)
 ;;---github---
@@ -47,6 +47,13 @@
 (require 'init-sql)
 ;;---whitespace---
 (require 'init-whitespace)
+<<<<<<< HEAD
+;;---ssh---
+(require 'init-ssh)
+
+
+=======
+>>>>>>> 2ff44c48a72a3523e2ca869790f1bfb626caa750
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
