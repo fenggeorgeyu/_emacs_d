@@ -16,9 +16,12 @@
 (require-package 'monokai-theme)
 (require-package 'zenburn-theme)
 (require-package 'atom-one-dark-theme)
+(require-package 'borland-blue-theme)
 ;;(load-theme 'monokai t)
 (load-theme 'zenburn t)
 ;;(load-theme 'atom-one-dark t)
+;;(load-theme 'borland-blue t)
+
 
 ;;---font
 ;; (set-default-font "Monaco-17")

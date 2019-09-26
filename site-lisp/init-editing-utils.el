@@ -39,7 +39,6 @@
 (add-hook 'after-init-hook 'transient-mark-mode)
 
 
-
 ;; Huge files
 
 (require-package 'vlf)
@@ -52,12 +51,10 @@
       (error "File does not exist: %s" file))
     (vlf file)))
 
-
 ;;; A simple visible bell which works in all terminal types
 (require-package 'mode-line-bell)
 (add-hook 'after-init-hook 'mode-line-bell-mode)
 
-
 
 (when (maybe-require-package 'beacon)
   (setq-default beacon-lighter "")
@@ -65,7 +62,7 @@
   (add-hook 'after-init-hook 'beacon-mode))
 
 
-
+
 ;;; Newline behaviour
 
 (global-set-key (kbd "RET") 'newline-and-indent)
@@ -77,26 +74,26 @@
 
 (global-set-key (kbd "S-<return>") 'sanityinc/newline-at-end-of-line)
 
-
+
 
 (after-load 'subword
   (diminish 'subword-mode))
 
-
+
 
 (unless (fboundp 'display-line-numbers-mode)
   (require-package 'nlinum))
 
-
+
 (when (require-package 'rainbow-delimiters)
   (add-hook 'prog-mode-hook 'rainbow-delimiters-mode))
 
-
+
 
 (when (fboundp 'global-prettify-symbols-mode)
   (add-hook 'after-init-hook 'global-prettify-symbols-mode))
 
-
+
 (when (maybe-require-package 'symbol-overlay)
   (dolist (hook '(prog-mode-hook html-mode-hook yaml-mode-hook conf-mode-hook))
     (add-hook hook 'symbol-overlay-mode))
@@ -113,7 +110,7 @@
 (global-set-key (kbd "M-Z") 'zap-up-to-char)
 
 
-
+
 (require-package 'browse-kill-ring)
 (setq browse-kill-ring-separator "\f")
 (global-set-key (kbd "M-Y") 'browse-kill-ring)

@@ -1,7 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 (require 'init-utils)
 ;; Must come before elpa, as it may provide package.el
-(require 'init-site-lisp) 
+(require 'init-site-lisp)
 ;; Calls (package-initialize)
 (require 'init-elpa)
 
@@ -26,7 +26,7 @@
 ;;---speed bar---
 (require 'init-speedbar)
 ;;--markdown
-(require 'init-markdown)
+;;(require 'init-markdown)
 ;;---spell check---
 (require 'init-flyspell)
 ;;(require 'init-flycheck)
@@ -47,18 +47,21 @@
 (require 'init-sql)
 ;;---whitespace---
 (require 'init-whitespace)
+<<<<<<< HEAD
 ;;---ssh---
 (require 'init-ssh)
 
 
+=======
+>>>>>>> 2ff44c48a72a3523e2ca869790f1bfb626caa750
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
+ '(custom-safe-themes
    (quote
-    (whitespace-cleanup-mode sqlup-mode sqlformat add-node-modules-path skewer-mode js-comint prettier-js typescript-mode coffee-mode js2-mode json-mode origami company-quickhelp company magithub github-clone bug-reference-github yagist git-messenger git-commit fullframe magit-todos magit git-timemachine gitconfig-mode gitignore-mode git-blamed anaconda-mode pip-requirements command-log-mode scratch diminish wgrep zenburn-theme tabbar sr-speedbar powerline monokai-theme markdown-mode atom-one-dark-theme))))
+    ("669e02142a56f63861288cc585bee81643ded48a19e36bfdf02b66d745bcc626" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
