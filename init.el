@@ -56,7 +56,14 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
+<<<<<<< HEAD
     (magithub github-clone git-commit magit-todos magit anaconda-mode zenburn-theme yagist whitespace-cleanup-mode wgrep typescript-mode tabbar ssh sr-speedbar sqlup-mode sqlformat skewer-mode scratch pythonic prettier-js powerline pip-requirements pcre2el origami monokai-theme markdown-mode json-mode js-comint gitignore-mode gitconfig-mode git-timemachine git-messenger git-blamed fullframe diminish company-quickhelp command-log-mode coffee-mode bug-reference-github borland-blue-theme atom-one-dark-theme async add-node-modules-path))))
+=======
+    ("669e02142a56f63861288cc585bee81643ded48a19e36bfdf02b66d745bcc626" default)))
+ '(package-selected-packages
+   (quote
+    (whitespace-cleanup-mode sqlup-mode sqlformat add-node-modules-path skewer-mode js-comint prettier-js typescript-mode coffee-mode js2-mode json-mode origami company-quickhelp magithub github-clone bug-reference-github yagist git-messenger fullframe magit-todos magit git-timemachine gitconfig-mode gitignore-mode git-blamed company-anaconda anaconda-mode pip-requirements sr-speedbar tabbar borland-blue-theme atom-one-dark-theme zenburn-theme monokai-theme powerline command-log-mode scratch diminish wgrep))))
+>>>>>>> 78fc4cfccc2ef670d02a53b6187703a44dcbbc00
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
