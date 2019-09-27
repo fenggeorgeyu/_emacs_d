@@ -37,7 +37,7 @@
 (require 'init-python)
 ;;---github---
 (require 'init-github)
-;;---company---
+;;---company: code auto complete---
 (require 'init-company)
 ;;---folding---
 (require 'init-folding)
