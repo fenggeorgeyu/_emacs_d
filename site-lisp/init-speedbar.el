@@ -14,4 +14,4 @@
 (setq sr-speedbar-right-side nil) ; put on left side
 (global-set-key (kbd "s-D") 'sr-speedbar-toggle)
 (global-set-key (kbd "<f5>") 'sr-speedbar-toggle)
-(Provide 'init-speedbar)
+(provide 'init-speedbar)

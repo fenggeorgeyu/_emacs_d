@@ -47,21 +47,16 @@
 (require 'init-sql)
 ;;---whitespace---
 (require 'init-whitespace)
-<<<<<<< HEAD
 ;;---ssh---
 (require 'init-ssh)
-
-
-=======
->>>>>>> 2ff44c48a72a3523e2ca869790f1bfb626caa750
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
+ '(package-selected-packages
    (quote
-    ("669e02142a56f63861288cc585bee81643ded48a19e36bfdf02b66d745bcc626" default))))
+    (magithub github-clone git-commit magit-todos magit anaconda-mode zenburn-theme yagist whitespace-cleanup-mode wgrep typescript-mode tabbar ssh sr-speedbar sqlup-mode sqlformat skewer-mode scratch pythonic prettier-js powerline pip-requirements pcre2el origami monokai-theme markdown-mode json-mode js-comint gitignore-mode gitconfig-mode git-timemachine git-messenger git-blamed fullframe diminish company-quickhelp command-log-mode coffee-mode bug-reference-github borland-blue-theme atom-one-dark-theme async add-node-modules-path))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
