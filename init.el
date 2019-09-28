@@ -49,3 +49,5 @@
 (require 'init-whitespace)
 ;;---ssh---
 (require 'init-ssh)
+;;---imenu for tag bar---
+(require 'init-imenu-list)

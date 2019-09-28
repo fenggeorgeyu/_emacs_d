@@ -9,6 +9,7 @@
 (require-package 'sr-speedbar)
 (setq sr-speedbar-remember-window-width t)
 (setq sr-speedbar-auto-refresh nil)
+;;(setq sr-speedbar-auto-refresh t)
 (setq speedbar-show-unknown-files t) ; show all files
 (setq speedbar-use-images nil) ; use text for buttons
 (setq sr-speedbar-right-side nil) ; put on left side
