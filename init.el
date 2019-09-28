@@ -26,10 +26,10 @@
 ;;---speed bar---
 (require 'init-speedbar)
 ;;--markdown
-;;(require 'init-markdown)
+(require 'init-markdown)
 ;;---spell check---
 (require 'init-flyspell)
-;;(require 'init-flycheck)
+
 ;; ;;---yasnippet--
 ;; (require 'yasnippet)
 ;; (yas-global-mod 1)
