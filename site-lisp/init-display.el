@@ -23,11 +23,9 @@
 ;;(load-theme 'borland-blue t)
 
 
-;;---font
-;; (set-default-font "Monaco-17")
-;;(set-default-font "Menlo-16")
-;; (set-default-font "Menlo-16")
-;;(set-default-font "Roboto Mono-17")
+;;---font for gui---
+(if window-system (set-default-font "Menlo-16"))
+
 ;;--line space
 (setq-default line-spacing 2)
 ;;---tab---

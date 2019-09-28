@@ -237,7 +237,6 @@
 (after-load 'whole-line-or-region
   (diminish 'whole-line-or-region-local-mode))
 
-
 ;; Some local minor modes clash with CUA rectangle selection
 
 (defvar-local sanityinc/suspended-modes-during-cua-rect nil
@@ -310,12 +309,9 @@ With arg N, insert N newlines."
                    (lambda (s1 s2) (eq (random 2) 0)))))))
 
 
-
-
 (require-package 'highlight-escape-sequences)
 (add-hook 'after-init-hook 'hes-mode)
 
-
 (require-package 'guide-key)
 (setq guide-key/guide-key-sequence t)
 (add-hook 'after-init-hook 'guide-key-mode)
