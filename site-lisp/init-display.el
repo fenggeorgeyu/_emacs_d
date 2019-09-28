@@ -25,6 +25,7 @@
 
 ;;---font for gui---
 (if window-system (set-default-font "Menlo-16"))
+(if window-system (set-frame-font "Menlo-16" t t))
 
 ;;--line space
 (setq-default line-spacing 2)
